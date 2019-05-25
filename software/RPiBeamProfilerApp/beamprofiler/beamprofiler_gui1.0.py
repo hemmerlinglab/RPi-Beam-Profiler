@@ -494,7 +494,7 @@ class ScanSettings(wx.Dialog):
 		vbox.Add((-1,20),0,wx.EXPAND)
 		self.SetSizer(vbox)	
 
-#functions that execute on events	
+	#functions that execute on events	
 	def OnSetPos(self,event):
 		try:
 			self.set_pos = float(event.GetString())
@@ -888,8 +888,8 @@ class MainWin(wx.Frame):
 		cam = self.camera
 		
 		# testing:
-		#print cam.image
-		#print 'All pixels zero??', cam.image.sum()
+		# print cam.image
+		print 'All pixels zero??', cam.image.sum()
 		
 		self.im_obj.set_array(cam.image)
 		self.xslice.set_data(cam.Xs,cam.imageX)
