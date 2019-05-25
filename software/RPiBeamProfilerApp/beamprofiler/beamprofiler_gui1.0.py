@@ -808,7 +808,7 @@ class MainWin(wx.Frame):
 		# Initialise stepper motor
 		self.Stepper = StepMotorControl(self)
 		# Call stepper calibration after a small delay
-		wx.FutureCall(500,self.TranslationStageCalibration)
+		#wx.FutureCall(500,self.TranslationStageCalibration)
 		
 		## Show main window
 		print 'Loading main window...'
